@@ -5,11 +5,11 @@ import java.util.*;
 public class Rotate{
     public static List<Integer> rotateList(List<Integer> list, int k) {
         int n = list.size();
-        k = k % n; // Handle cases where k is greater than the list length
+        k = k % n;
 
         List<Integer> rotated = new ArrayList<>();
-        rotated.addAll(list.subList(k, n));  // Elements from index k to end
-        rotated.addAll(list.subList(0, k));  // Elements from start to index k
+        rotated.addAll(list.subList(k, n));
+        rotated.addAll(list.subList(0, k));
 
         return rotated;
     }
