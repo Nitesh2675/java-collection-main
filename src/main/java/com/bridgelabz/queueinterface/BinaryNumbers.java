@@ -5,7 +5,7 @@ import java.util.Queue;
 
 public class BinaryNumbers {
     public static void main(String[] args) {
-        int N = 5; // Example input
+        int N = 10; // Example input
         generateBinaryNumbers(N);
     }
 
