@@ -10,7 +10,7 @@ class Stack {
     // Push operation
     public void push(int x) {
         // Move all elements from q1 to q2
-        while (!q1.isEmpty()) {
+     /*   while (!q1.isEmpty()) {
             q2.add(q1.remove());
         }
 
@@ -21,6 +21,12 @@ class Stack {
         while (!q2.isEmpty()) {
             q1.add(q2.remove());
         }
+        */
+      int size=q1.size();
+      q1.add(x);
+      while(size-->0){
+          q1.add(q1.poll());
+      }
     }
 
     // Pop operation
